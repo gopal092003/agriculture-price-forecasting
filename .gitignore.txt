@@ -8,19 +8,6 @@ __pycache__/
 venv/
 .env
 
-# Data
-data/raw/*
-!data/raw/.gitkeep
-
-# Models
-models/
-*.pkl
-
-# Outputs
-outputs/
-*.csv
-*.json
-
 # Logs
 logs/
 *.log

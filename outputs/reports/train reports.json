@@ -1,0 +1,17 @@
+{
+    "SARIMA": {
+        "Best SARIMAX model": {
+            "Order (p,d,q)": "(np.int64(0), np.int64(1), np.int64(3))",
+            "Seasonal order (P,D,Q,s)": "(np.int64(0), np.int64(0), np.int64(0), 12)",
+            "AIC": "-454.78722217461944"
+        }
+    },
+    "residual model": {
+        "Model": "XGBoost",
+        "Best RMSE": 0.088,
+        "Best Parameters": {
+            "learning_rate": 0.03,
+            "max_depth": 9
+        }
+    }
+}
