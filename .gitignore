@@ -18,7 +18,6 @@ models/
 
 # Outputs
 outputs/
-*.png
 *.csv
 *.json
 
