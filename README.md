@@ -19,7 +19,7 @@ A complete **end-to-end time series forecasting pipeline** that combines classic
 
 ## 🧠 Model Architecture
 
-![architecture](outputs/plots/README_images/architecture.png)
+![architecture](data/architecture.png)
 
 ### 🔹 Methodology
 
@@ -56,7 +56,7 @@ price-forecasting-project/
 
 ### 🔹 Time Series Overview
 
-![eda](outputs/plots/README_images/time_series.png)
+![eda](outputs/plots/eda/AverageMonthlyPrice-FullSeries.png)
 
 * Long-term trend visualization
 * Detects structural shifts and patterns
@@ -65,7 +65,7 @@ price-forecasting-project/
 
 ### 🔹 Monthly Seasonality
 
-![seasonality](outputs/plots/README_images/monthly_trends.png)
+![seasonality](outputs/plots/eda/Month-wisevsYearlyAveragePriceTrend.png)
 
 * Captures repeating **12-month seasonal cycles**
 
@@ -73,7 +73,7 @@ price-forecasting-project/
 
 ### 🔹 Season-wise Analysis
 
-![season](outputs/plots/README_images/season_trend.png)
+![season](outputs/plots/seasonality/AveragePricebySeasonwithStdDev.png)
 
 * Compares price behavior across:
 
@@ -86,28 +86,27 @@ price-forecasting-project/
 
 ### 🔹 Volatility Analysis
 
-![volatility](outputs/plots/README_images/volatility.png)
+![volatility](outputs/plots/volatility/AbsoluteMoMPriceChange.png)
 
 * Month-over-month % change
 * Rolling standard deviation
 
 ---
 
-### 🔹 Time Series Decomposition
+### 🔹 Time Series Trend
 
-![decomposition](outputs/plots/README_images/decomposition.png)
+![Trend](outputs/plots/trend/Trend.png)
 
 Breaks the series into:
 
-* Trend
-* Seasonality
-* Residual
+* Short-term Trend
+* Long-term Trend
 
 ---
 
 ## 📉 Outlier Detection
 
-![outliers](outputs/plots/README_images/outliers.png)
+![outliers](outputs/plots/eda/outliers.png)
 
 * IQR-based detection
 * Z-score validation
@@ -129,7 +128,7 @@ Breaks the series into:
 
 ## 📌 SARIMA Modeling
 
-![sarima](outputs/plots/README_images/sarima_fit.png)
+![sarima](outputs/plots/eda/ACF&PACF.png)
 
 * ACF / PACF analysis for lag selection
 * Grid search over `(p, d, q)` and `(P, D, Q, s)`
@@ -139,7 +138,7 @@ Breaks the series into:
 
 ## 🤖 Residual Learning (XGBoost / GBM)
 
-![residuals](outputs/plots/README_images/residuals.png)
+![residuals](outputs/plots/residuals/residual.png)
 
 * Residuals from SARIMA used as target
 * Models trained:
@@ -163,7 +162,7 @@ Breaks the series into:
 
 ## 🔮 Final Forecast
 
-![forecast](outputs/plots/README_images/final_forecast.png)
+![forecast](notebooks/result.png)
 
 * 12-month future prediction
 * Hybrid SARIMA + ML model
@@ -176,12 +175,12 @@ Breaks the series into:
 
 ### 📁 Predictions
 
-* `sarima_forecast.csv`
 * `final_forecast.csv`
 
 ### 📁 Reports
 
 * `reports.json`
+* `reports.txt`
 * `train reports.json`
 
 ### 📁 Models
