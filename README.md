@@ -106,7 +106,7 @@ Breaks the series into:
 
 ## 📉 Outlier Detection
 
-![outliers](outputs/plots/eda/outliers.png)
+![outliers](outputs/plots/eda/Outliers.png)
 
 * IQR-based detection
 * Z-score validation
