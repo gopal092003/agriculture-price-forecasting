@@ -1,0 +1,16 @@
+data:
+  raw: data/raw/price_data.csv
+  interim: data/interim/cleaned_data.csv
+  processed: data/processed/processed_data.csv
+  final: data/final/processed_data.csv
+
+models:
+  sarima: models/sarima/best_model.pkl
+  sarima_results: models/sarima/sarima_results.csv
+  residual_model: models/residual_models/residual_model.pkl
+  comparison: models/residual_models/comparison.csv
+
+outputs:
+  plots: outputs/plots/
+  predictions: outputs/predictions/
+  reports: outputs/reports/
