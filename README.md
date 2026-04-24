@@ -232,9 +232,10 @@ python -m pipeline.run_pipeline
 
 ---
 
-## 👨‍💻 Author
+## 👤 Author
 
 **Gopal Gupta**
+GitHub: https://github.com/gopal092003
 
 ---
 
